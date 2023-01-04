@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="content">
+        The Rose Valley (Bulgaria) is located just south of 
+        the Balkan Mountains (Kazanlak).The most common oil-bearing rose
+        found in the valley is the pink-petaled Damask rose (Rosa damascena Mill).
+    </p>
+    <script>
+        function extract(elementId) {
+            let txt = document.getElementById(elementId).textContent
+            let pattern = /\((?<text>[^)]+)\)/g
+            let result = []
+            let validText = pattern.exec(txt)
+            while(validText !== null) {
+                let word = validText.groups.text
+                result.push(word)
+                validText = pattern.exec(txt)
+            }
+            return result.join('; ');
+        }
+
+        let text = extract('content')
+    </script>
+</body>
+</html>

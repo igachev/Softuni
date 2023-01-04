@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="items">
+        <li>first item</li>
+        <li>second item</li>
+        <li>third item</li>
+    </ul>
+    <textarea name="" id="result" cols="30" rows="10">
+    </textarea>
+    <button onclick="extractText()">Extract Text</button>
+
+    <script>
+        function extractText() {
+            let ulElement = document.querySelectorAll('ul#items li')
+            let textAreaElement = document.getElementById('result')
+            for(let li of ulElement) {
+             let currentLi = li.textContent
+             textAreaElement.value += currentLi + '\n'
+            }
+        }
+    </script>
+</body>
+</html>
