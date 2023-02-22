@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="formApp.js" defer></script>
+<style>
+    article {
+        background-color: #eee;
+        margin: 32px;
+        padding: 16px;
+    }
+</style>
+<body>
+    <h1>Form demo</h1>
+
+    <form id="comment-form">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name">
+
+        <div>
+        <label for="content">Comment:</label>
+        <textarea name="content" id="content" cols="30" rows="10"></textarea>
+        </div>
+
+        <button id="send">Send Comment</button>
+    </form>
+
+    <button id="load">Load comments</button>
+
+    <div id="comments">
+
+    </div>
+
+</body>
+</html>
