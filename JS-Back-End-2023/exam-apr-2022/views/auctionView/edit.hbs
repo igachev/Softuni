@@ -1,0 +1,63 @@
+<main>
+
+    <!-- In case of error, display the following div-->
+    <!--
+
+            <div class="error-box">
+                <p>Show each error in a separate paragraph</p>
+            </div>
+
+            -->
+
+    <!-- Edit Page -->
+    <section id="create-section">
+
+        <h1 class="item">Edit Auction</h1>
+
+        <div class="item padded align-center">
+
+            <form class="layout left large" method="post" >
+
+                <div class="col aligned">
+                    <label>
+                        <span>Title</span>
+                        <input type="text" name="title" value="{{auction.title}}"></label>
+                    <label>
+                        <span>Category</span>
+                        <select name="category">
+                            {{#each updatedCategories}}
+                            <option value="{{this.value}}" {{#if selected}} selected {{/if}}>{{this.label}}</option>
+                            {{/each}}
+                        </select>
+                    </label>
+                    <label>
+                        <span>Image URL</span>
+                        <input type="text" name="imageUrl" value="{{auction.imageUrl}}">
+                    </label>
+                    <label>
+                        <span>Starting price</span>
+
+                        <!-- If the current auction has a bidder, this input field should be disabled -->
+                        <input {{#if hasBidder}} disabled {{/if}} type="number" name="price" value="{{auction.price}}">
+                    </label>
+                </div>
+
+                <div class="content pad-med align-center vertical">
+                    <label>
+                        <span>Description</span>
+                        <textarea name="description">{{auction.description}}
+                        </textarea>
+                    </label>
+
+                    <div class="align-center">
+                        <input class="action" type="submit" value="Update Listing">
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+
+    </section>
+
+</main>
