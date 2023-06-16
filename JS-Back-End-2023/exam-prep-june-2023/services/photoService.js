@@ -9,3 +9,11 @@ exports.getAll = async () => {
     const photos = await Photo.find({}).populate('owner').lean()
     return photos
 }
+
+exports.getOne = async (photoId) => {
+const photo = await Photo.findById(photoId)
+.populate('owner')
+.populate('commentList')
+.lean();
+return photo;
+}

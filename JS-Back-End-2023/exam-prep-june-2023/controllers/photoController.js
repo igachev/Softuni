@@ -26,4 +26,19 @@ router.post('/create', authMiddleware.isAuthorized, async (req,res) => {
     }
 })
 
+router.get('/:photoId/details', async (req,res) => {
+    const photoId = req.params.photoId
+    const isAuthenticated = req?.isAuthenticated
+    const userId = req.user?._id;
+     
+    try {
+        const photo = await photoService.getOne(photoId)
+        const isOwner = photo.owner == userId
+        res.render('./photoView/details', {photo,isAuthenticated,isOwner})
+    } catch (err) {
+        console.log(err);
+        
+    }
+})
+
 module.exports = router
