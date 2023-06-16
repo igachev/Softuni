@@ -24,3 +24,13 @@ exports.addComment = async (photoId,userID,comment) => {
     photo.commentList.push({userID,comment})
     await photo.save()
 }
+
+exports.edit = async (photoId, data) => {
+    const photo = await Photo.findByIdAndUpdate(photoId,data,{runValidators:true})
+    return photo;
+}
+
+exports.deleteOne = async (photoId) => {
+    const photo = await Photo.findByIdAndDelete(photoId)
+    return photo
+}
