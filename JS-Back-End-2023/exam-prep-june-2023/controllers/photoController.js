@@ -55,7 +55,7 @@ router.post('/:photoId/details', async (req,res) => {
     }
 })
 
-router.get('/:photoId/edit', async (req,res) => {
+router.get('/:photoId/edit', authMiddleware.isAuthorized, async (req,res) => {
     try {
         const photoId = req.params.photoId
         const photo = await photoService.getOne(photoId)
@@ -65,7 +65,7 @@ router.get('/:photoId/edit', async (req,res) => {
     }
 })
 
-router.post('/:photoId/edit', async (req,res) => {
+router.post('/:photoId/edit', authMiddleware.isAuthorized, async (req,res) => {
     const photoId = req.params.photoId
     const {name,age,description,location,image} = req.body;
     try {
@@ -74,6 +74,16 @@ router.post('/:photoId/edit', async (req,res) => {
         res.redirect(`/photos/${photoId}/details`)
     } catch (err) {
         return res.render('./photoView/edit',{error: errorMsg(err)})
+    }
+})
+
+router.get('/:photoId/delete', authMiddleware.isAuthorized, async (req,res) => {
+    try {
+        const photoId = req.params.photoId
+        await photoService.deleteOne(photoId)
+        res.redirect('/photos/catalog')
+    } catch (err) {
+        console.log(err);
     }
 })
 
