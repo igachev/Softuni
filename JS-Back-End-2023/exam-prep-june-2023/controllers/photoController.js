@@ -3,6 +3,13 @@ const {errorMsg} = require('../utils/errorMsg.js')
 const authMiddleware = require('../middlewares/authMiddleware.js')
 const photoService = require('../services/photoService.js')
 
+
+router.get('/catalog', async (req,res) => {
+    const photos = await photoService.getAll()
+    
+    res.render('./photoView/catalog', {photos})
+})
+
 router.get('/create', authMiddleware.isAuthorized, (req,res) => {
     res.render('./photoView/create')
 })

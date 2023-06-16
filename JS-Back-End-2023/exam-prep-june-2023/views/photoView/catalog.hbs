@@ -1,0 +1,61 @@
+
+
+    <!-- Starts Main Section -->
+    <main>
+        <div class="container">
+            <div class="col-9">
+                <!-- Start Pet Photos Post Section -->
+{{#if photos}}
+{{#each photos}}
+                <div class="card">
+                
+                    <!-- Start User Details and Image Location -->
+                    <div class="top">
+                        <div class="userDetails">
+                            <!-- Link to User Profile Page -->
+                            <a href="/profile" >
+                                <div class="profilepic">
+                                    <div class="profile_img">
+                                        <div class="image">
+                                            <img src="/static/images/person.png">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <h3>
+                                <!-- Link to User Profile Page -->
+                                <p>
+                                    <!-- show user username -->
+                                    {{this.owner.username}}
+                                </p>    
+                                <!-- photo's location -->
+                                <span>{{this.location}}</span>
+                            </h3>
+                        </div>
+                    </div>
+
+                    <!-- Start Pet Photo -->
+                    <div class="imgBx">
+                        <img src="{{this.image}}" alt="post" class="cover">
+                    </div>
+                    <!-- Name of Pet -->
+                    <h5 class="petName">Name: {{this.name}}</h5>
+                    <!-- Age of Pet -->
+                    <h5 class="petAge">Age: {{this.age}}</h5>
+                    <!-- Link to Photo Details Page -->
+                    <a href="/photos/{{this._id}}/details" id="see-details">
+                        <h4 class="details">See details</h4>
+                    </a>
+                </div>
+                {{/each}}
+               {{else}}
+
+                <!--If there are no photo yet!-->
+                <article class="not-available-photo">
+                    <h1>No photo posts yet.</h1>
+                </article>
+                {{/if}}
+            </div>
+
+        </div>
+    </main>
