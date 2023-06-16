@@ -34,3 +34,8 @@ exports.deleteOne = async (photoId) => {
     const photo = await Photo.findByIdAndDelete(photoId)
     return photo
 }
+
+exports.getProfileInfo = async (userId) => {
+    const photos = await Photo.find({owner:userId}).lean()
+    return photos
+}

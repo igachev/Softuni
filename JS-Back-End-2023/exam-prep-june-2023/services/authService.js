@@ -35,3 +35,4 @@ exports.register = async (username,email,password,repeatPassword) => {
 
  await User.create({username,email,password})
 }
+
