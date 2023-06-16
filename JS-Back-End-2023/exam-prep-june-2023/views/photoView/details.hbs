@@ -25,7 +25,7 @@
                             <!-- Link to User Profile Details Page -->
                             <p>
                                 <!-- User's username -->
-                                MayaM
+                                {{photo.owner.username}}
                             </p>
                             <!-- photo's location -->
                             <span>{{photo.location}}</span>
@@ -73,9 +73,11 @@
                         <p class="petAge">Age: {{photo.age}}</p>
                     </div>
                     {{#if photo.commentList}}
+                    {{#each photo.commentList}}
                     <div class="comments">
-                        {{#each photo.commentList}}
+                        
                         <div class="comments-top">
+                            
                             <div class="userDetails">
                                 <div class="comment-data">
                                     <div class="profilepic">
@@ -88,15 +90,16 @@
                                     </div>
                                     
                                     <!--User's username-->
-                                    <p><b>{{this.userID}}</b>- {{this.comment}}</p>
+                                    <p><b>{{this.userID.username}}</b>- {{this.comment}}</p>
                                     
                                 </div>
                             </div>
                             
                             
                         </div>
-                        {{/each}}
+                        
                     </div>
+                    {{/each}}
                     {{/if}}
                 </div>
                 {{#if isAuthenticated}}
@@ -104,7 +107,7 @@
                 <div class="addComments">
                     <!-- Start Add Comments Form -->
                     <form method="post">
-                        <textarea id="comment-textarea" name="" cols="40" rows="10"
+                        <textarea id="comment-textarea" name="comment" cols="40" rows="10"
                             placeholder="Add comment..."></textarea>
                         <!-- Post Comments Button -->
                         <button type="submit">Post</button>

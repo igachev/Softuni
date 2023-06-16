@@ -41,4 +41,18 @@ router.get('/:photoId/details', async (req,res) => {
     }
 })
 
+router.post('/:photoId/details', async (req,res) => {
+    const {comment} = req.body;
+    const photoId = req.params.photoId
+    const userId = req.user?._id;
+
+    try {
+        await photoService.addComment(photoId,userId,comment)
+        res.redirect(`/photos/${photoId}/details`)
+    } catch (err) {
+        console.log(err);
+        
+    }
+})
+
 module.exports = router

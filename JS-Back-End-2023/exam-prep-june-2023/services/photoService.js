@@ -13,7 +13,14 @@ exports.getAll = async () => {
 exports.getOne = async (photoId) => {
 const photo = await Photo.findById(photoId)
 .populate('owner')
-.populate('commentList')
+.populate('commentList.userID')
+//.populate('commentList.comment')
 .lean();
 return photo;
+}
+
+exports.addComment = async (photoId,userID,comment) => {
+    const photo = await Photo.findById(photoId)
+    photo.commentList.push({userID,comment})
+    await photo.save()
 }
