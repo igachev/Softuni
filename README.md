@@ -20,3 +20,17 @@
 7. Objects and Classes
 8. Manipulating Strings
 9. Regular Expressions
+
+
+## JS Advanced Course
+
+
+### Topics:
+1. Arrays and Nested Arrays
+2. Objects and Composition
+3. Dom Introduction
+4. Dom Manipulations and Events
+5. Closures,Currying
+6. Unit Testing(mocha and chai) and Error Handling
+7. Classes
+8. Prototype and Inheritance
