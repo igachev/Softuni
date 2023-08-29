@@ -1,0 +1,29 @@
+header {
+    border-bottom: 2px solid rgb(0,0,0);
+    display: flex;
+    width: 95%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+header ul {
+    display: flex;
+    
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    color: rgb(0,153,0);
+    text-decoration: none;
+    padding: 8px;
+}
+
+main {
+    width: 95%;
+    margin: auto;
+}
