@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(238,238,238);
+    height: 100vh;
+    font-family: Helvetica, sans-serif;
+    border: 3px solid black;
+}
+
+header {
+    border-bottom: 2px solid black;
+}
+
+header h1 {
+    text-transform: uppercase;
+    padding: 0px 20px;
+}
+
+main {
+    padding: 0px 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+footer {
+    color: rgb(255,255,255);
+    background-color: rgb(102,102,102);
+    text-indent: 20px;
+    margin-top: auto;
+}
