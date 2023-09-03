@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(238,238,238);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+height: 100vh;
+}
+
+.container {
+    display: flex;
+   
+    width: 600px;
+}
+
+.container .small-img {
+    display: flex;
+    flex: 1 1;
+    
+    margin: 0px 8px;
+}
+
+.container .medium-img {
+    display: flex;
+    flex: 5 1 ;
+    margin: 0px 8px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+
