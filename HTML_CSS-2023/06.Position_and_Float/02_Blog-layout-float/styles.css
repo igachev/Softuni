@@ -1,0 +1,90 @@
+html {
+    font-size: 16px;
+    font-family: Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+body {
+    background-color: rgb(238,238,238);
+
+}
+
+h1,h2,h3 {
+    font-family: Georgia, serif;
+    font-size: 1em;
+    line-height: 1.2;
+}
+
+.site-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    border-bottom: 1px solid black;
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(1,minmax(200px,1fr));
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: center;
+    margin-left: 115px;
+    width: 50%;
+    
+}
+
+.container .one img {
+float: right;
+}
+
+.container .two blockquote {
+    border-left: 3px solid grey;
+    padding-left: 15px;
+    font-style: italic;
+    float: right;
+    width: 40%;
+    font-family: Georgia, serif;
+}
+
+.container .two blockquote p {
+    font-style: italic;
+    text-align: right;
+}
+
+.container .two .text {
+    text-indent: 2px;
+    width: 40%;
+}
+
+.container .three img {
+    float: left;
+    margin-right: 15px;
+   
+}
+
+
+img {
+    border: 2px solid black;
+    padding: 4px;
+    background-color: rgb(255,255,255);
+    box-shadow: 1px 2px 3px 5px rgb(0,0,0,0.25);
+}
+
+aside {
+    float: right;
+    width: 20%;
+}
+
+aside a {
+    color: rgb(0,153,0);
+    text-decoration: none;
+ }
