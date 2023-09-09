@@ -1,0 +1,61 @@
+@import url("https://use.fontawesome.com/releases/v5.10.2/css/all.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.one {
+    background: linear-gradient(to right,hsl(228, 75%, 52%),hsl(157, 83%, 46%));
+    width: 100vw;
+    height: 50vh;
+    position: relative;
+}
+
+.card-one {
+    position: absolute;
+    top: 120px;
+    left: 450px;
+    width: 400px;
+    height: 200px;
+}
+
+.card-one i {
+    color: #fff;
+    position: absolute;
+    top: 180px;
+    right: 10px;
+}
+
+.two {
+    background: linear-gradient(to right,hsl(340, 75%, 52%),hsl(41, 83%, 46%));
+    width: 100vw;
+    height: 50vh;
+    position: relative;
+}
+
+.card-two {
+    position: absolute;
+    top: 15px;
+    left: 450px;
+    width: 400px;
+    height: 420px;
+}
+
+.card-two i {
+    color: #fff;
+    position: absolute;
+    bottom: 5px;
+    right: 8px;
+}
+
+.card {
+    display: block;
+}
