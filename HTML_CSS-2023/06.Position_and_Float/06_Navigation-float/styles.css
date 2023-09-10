@@ -1,0 +1,98 @@
+body {
+    background-color: rgb(238,238,238);
+}
+
+h1,h3 {
+    font-family: Georgia, serif;
+    font-size: 1em;
+    line-height: 1.2;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    border-bottom: 1px solid black;
+    padding-top: 50px;
+    
+}
+
+.main-header nav ul {
+    display: flex;
+    
+}
+
+.main-header nav ul li {
+    list-style: none;
+    margin-right: 15px;
+    margin-top: -10px;
+}
+
+.main-header nav ul li a {
+    text-decoration: none;
+}
+
+a {
+    color: rgb(0,102,0);
+    
+}
+
+blockquote {
+    font-family: Georgia, serif;
+    font-style: italic;
+    border-left: 2px solid grey;
+    padding-left: 20px;
+}
+
+blockquote p {
+    font-style: italic;
+    text-align: right;
+}
+
+.container {
+    
+    width: 80%;
+    margin: auto;
+}
+.container header, .one, .two, .three {
+    width: 70%;
+}
+
+.container .aside-section {
+    width: 20%;
+    float: right;
+}
+
+.container .aside-section a {
+    text-decoration: none;
+}
+
+.one img {
+    float: right;
+    margin-left: 10px;
+}
+
+.two .same-row {
+    display: flex;
+
+}
+
+.three img {
+    float: left;
+    margin-right: 10px;
+}
+
+
+img {
+    border: 1px solid black;
+    padding: 4px;
+}
