@@ -1,0 +1,100 @@
+html {
+    font-size: 16px;
+    font-family: Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+.site-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    border-bottom: 1px solid black;
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(1,minmax(200px,1fr));
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 80%;
+    
+}
+
+.container .one img {
+float: right;
+}
+
+.container .two blockquote {
+    border-left: 3px solid grey;
+    padding-left: 15px;
+    font-style: italic;
+    float: right;
+    width: 40%;
+}
+
+.container .two blockquote p {
+    font-style: italic;
+    text-align: right;
+}
+
+.container .two .text {
+    text-indent: 2px;
+    width: 40%;
+}
+
+.container .three img {
+    float: left;
+    margin-right: 15px;
+}
+
+img {
+    border: 2px solid black;
+    padding: 4px;
+}
+
+@media(min-width:100px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media(min-width:500px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media(min-width:600px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media(min-width:800px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+@media(min-width:1300px) {
+    html {
+        font-size: 21px;
+    }
+}
+
+@media(min-width:1800px) {
+    html {
+        font-size: 23px;
+    }
+}
