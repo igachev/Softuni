@@ -1,0 +1,55 @@
+body {
+    background-color: rgb(238,238,238);
+}
+
+
+blockquote {
+    font-family: Georgia, serif;
+    font-style: italic;
+    border-left: 2px solid grey;
+    padding-left: 20px;
+}
+
+blockquote p {
+    font-style: italic;
+    text-align: right;
+}
+
+.container {
+    
+    width: 80%;
+    margin: auto;
+}
+.container header, .one, .two, .three {
+    width: 70%;
+}
+
+.container .aside-section {
+    width: 20%;
+    float: right;
+}
+
+.container .aside-section a {
+    text-decoration: none;
+    color: rgb(0,102,0);
+}
+
+.one img {
+    float: right;
+    margin-left: 10px;
+}
+
+.two .blockquote-container {
+    width: 50%;
+}
+
+.three img {
+    float: left;
+    margin-right: 10px;
+}
+
+
+img {
+    border: 1px solid black;
+    padding: 4px;
+}
