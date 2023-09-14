@@ -1,0 +1,129 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css");
+
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    padding: 0;
+    
+}
+
+
+
+fieldset {
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 300px;
+justify-content: center;
+padding: 0px;
+border-radius: 4px;
+background-color: rgb(238,238,238);
+}
+
+legend {
+    border: 2px solid grey;
+    border-radius: 4px;
+    padding-right: 50px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 10px;
+    transform: translateX(-2px);
+    background-color: rgb(238,238,238);
+}
+
+label {
+    font-weight: bold;
+    margin-right: 3px;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.row-one {
+    
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    position: relative;
+ }
+
+ .fa-user {
+position: absolute;
+top: 4px;
+left: 80px;
+font-size: 14px;
+ }
+
+ 
+
+ #username {
+    padding-left: 20px;
+ }
+
+.row-two {
+    
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#password {
+    padding-left: 20px;
+}
+
+.fa-key {
+    position: absolute;
+    top: 3px;
+    left: 75px;
+    font-size: 14px;
+ }
+
+.btn-container {
+    display: flex;
+    margin: 20px 0;
+    transform: translateX(-100px);
+}
+
+fieldset button {
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: black;
+    color: #fff;
+    padding: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* tablet */
+
+@media(max-width:481px) {
+    .row-one {
+        flex-direction: column;
+    }
+
+    .fa-user {
+        top: 21px;
+        left: 8px;
+    }
+
+    .row-two {
+        flex-direction: column;
+    }
+
+    .fa-key {
+        top: 21px;
+        left: 7px;
+    }
+}
