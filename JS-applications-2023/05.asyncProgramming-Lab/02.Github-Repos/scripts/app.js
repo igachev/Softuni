@@ -16,6 +16,7 @@ const items = data.map((repo) => {
 	li.appendChild(a)
 	return li;
 })
+
 	
 list.replaceChildren(...items)
 }

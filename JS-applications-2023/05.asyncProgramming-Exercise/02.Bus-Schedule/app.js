@@ -13,6 +13,7 @@ let stop = {
     const url = `http://localhost:3030/jsonstore/bus/schedule/${stop.next}`
     const res = await fetch(url)
     stop = await res.json()
+    console.log(stop)
     infoBox.textContent = `Next stop ${stop.name}`
     arriveBtn.disabled = false;
     } catch (error) {

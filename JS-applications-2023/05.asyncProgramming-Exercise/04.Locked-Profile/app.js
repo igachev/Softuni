@@ -8,13 +8,14 @@ try {
     let res = await fetch(url)
     let data = await res.json()
     let entries = Object.entries(data)
+    //console.log(entries)
     main.innerHTML = ''
 
     for(let [k,v] of entries) {
-        console.log(v);
+       // console.log(v);
     
     let newCopy = prof.cloneNode(true)
-    
+    console.log(newCopy)
     let lockedState = newCopy.getElementsByTagName('input')[0]
     lockedState.name = `${v._id}`
     

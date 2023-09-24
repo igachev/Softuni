@@ -63,7 +63,7 @@ function attachEvents() {
         body: JSON.stringify(body)
     })
     const data = await res.json()
-    getContacts()
+    
     return data;
    }
 
@@ -71,7 +71,7 @@ function attachEvents() {
     let person = document.getElementById('person').value;
     let phone = document.getElementById('phone').value;
      await postContact(person,phone)
-    
+     getContacts()
     document.getElementById('person').value = '';
     document.getElementById('phone').value = '';
    }

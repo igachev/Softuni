@@ -12,16 +12,21 @@ function attachEvents() {
 
     btn.addEventListener('click',async() => {
        try {
+        let label = document.querySelector('.label')
+        if(label.textContent !== 'Current conditions') {
+            label.textContent = 'Current conditions'
+        }
+
         let res = await fetch(url)
         let data = await res.json()
-        
+        console.log(data)
         let location = document.getElementById('location').value;
         let findCity = data.find(({name}) => name === location)
         let codeId = findCity.code;
         
         let getToday = await fetch(`http://localhost:3030/jsonstore/forecaster/today/${codeId}`)
         let todayData = await getToday.json()
-
+        console.log(todayData)
         let low = todayData.forecast.low;
         let high = todayData.forecast.high
         let condition = todayData.forecast.condition;
@@ -59,9 +64,19 @@ function attachEvents() {
         conditionSpan.appendChild(currentCondition)
         forecasts.appendChild(iconSpan)
         forecasts.appendChild(conditionSpan)
+
+        if(current.children.length > 1) {
+            current.removeChild(current.lastChild)
+        }
+        
         current.appendChild(forecasts)
 
         let upcoming = document.getElementById('upcoming')
+
+        if(upcoming.style.display === 'none') {
+            upcoming.style.display = 'block'
+        }
+
         let getUpcoming = await fetch(`http://localhost:3030/jsonstore/forecaster/upcoming/${codeId}`)
         let upcomingData = await getUpcoming.json()
 
@@ -90,10 +105,22 @@ function attachEvents() {
         container.appendChild(spanHolder)
         })
 
+        if(upcoming.children.length > 1) {
+            upcoming.removeChild(upcoming.lastChild)
+        }
+
         upcoming.appendChild(container)
+        
        } catch (error) {
         forecast.style.display = 'block'
-        forecast.textContent = 'Error'
+        let label = document.querySelector('.label')
+        label.textContent = 'Error'
+        let forecasts = document.querySelector('.forecasts')
+        let upcoming = document.getElementById('upcoming')
+        if(forecasts !== null) {
+            forecasts.style.display = 'none'
+        }
+        upcoming.style.display = 'none'
        }
     })
 }

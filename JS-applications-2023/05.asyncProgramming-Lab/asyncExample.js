@@ -11,6 +11,7 @@ async function asyncCall() {
     console.log('calling');
     let result = await resolveAfter2Sec()
     console.log(result);
+    console.log('in queue')
 }
 
 asyncCall()

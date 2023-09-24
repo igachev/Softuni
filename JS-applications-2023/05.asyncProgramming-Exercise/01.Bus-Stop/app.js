@@ -1,10 +1,10 @@
 async function getInfo() {
-  const busId = document.getElementById('stopId').value;
+  let busId = document.getElementById('stopId').value;
   const stopName = document.getElementById('stopName')
     const list = document.getElementById('buses')
     list.innerHTML = ''
     stopName.innerHTML = ''
-    busId.value = ''
+    
     try {
     const response = await fetch(`http://localhost:3030/jsonstore/bus/businfo/${busId}`)
     //console.log(response);
