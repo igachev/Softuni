@@ -1,0 +1,258 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    background-color: rgb(226, 220, 220);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav button {
+    margin-right: 40px;
+    padding: 7px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+nav .menu-list {
+    display: flex;
+    margin-left: 50px;
+}
+
+nav .menu-list li {
+    list-style: none;
+    padding: 20px;
+}
+
+nav .menu-list li a {
+    text-decoration: none;
+    color: black;
+}
+
+.section-one {
+background-image: url("images/background.jpg");
+background-repeat: no-repeat;
+background-position: bottom;
+background-size: cover;
+height: 500px;
+position: relative;
+}
+
+.section-one .wrapper-box {
+    position: absolute;
+    top: 110px;
+    left: 150px;
+}
+
+.section-one .first-box {
+    width: 500px;
+    margin-bottom: 60px;
+}
+
+.section-one .first-box h1 {
+    font-size: 40px;
+}
+
+.section-one .second-box {
+    width: 500px;
+    margin-bottom: 30px;
+}
+
+.section-one .second-box p {
+    color: #fff;
+    font-weight: bold;
+}
+
+.section-one .third-box button {
+    background-color: black;
+    color: #fff;
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 10px 25px;
+}
+
+.section-two {
+    display: flex;
+    justify-content: space-around;
+}
+
+.section-two .standard-box {
+text-align: center;
+}
+
+.section-two .standard-box h3 {
+    font-size: 40px;
+    color: rgb(248, 89, 31);
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+.section-two .standard-box h5 {
+    font-weight: 400;
+    font-size: 16px;
+    padding-bottom: 6px;
+}
+
+.section-two .standard-box p {
+    font-size: 10px;
+    padding-bottom: 30px;
+}
+
+.section-three {
+    background-color: rgb(226, 220, 220);
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.section-three .standard-card .img-container {
+    max-width: 400px;
+    float: left;
+    margin-right: 15px;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.section-three .standard-card:last-child {
+    margin-bottom: 40px;
+}
+
+.section-three .standard-card p {
+    padding-top:30px;
+    padding-right: 70px;
+    opacity: 0.7;
+}
+
+.section-three .standard-card h4 {
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.section-three .standard-card button {
+    display: block;
+    margin-top: 7px;
+    margin-bottom: 20px;
+    border:none;
+    font-weight: bold;
+    background-color: transparent;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.section-three .standard-card small {
+    opacity: 0.7;
+}
+
+.section-four {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+}
+
+.section-four .container-one {
+    width: 350px;
+    text-align: left;
+}
+
+.section-four .container-one h3 {
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.section-four .container-one p {
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.section-four .container-two {
+    width: 350px;
+    background-color: rgb(248, 89, 31);
+    text-align: center;
+    padding: 20px;
+}
+
+.section-four .container-two h5 {
+font-size: 20px;
+}
+
+.section-four .container-two h1 {
+    font-size: 40px;
+    padding: 20px 0;
+}
+
+.section-four .container-two p {
+font-size: 14px;
+padding: 6px 0;
+}
+
+.section-four .container-two button {
+    background-color: black;
+    color: #fff;
+    border-radius: 4px;
+        padding: 8px 20px;
+        cursor: pointer;
+}
+
+.section-four .container-three {
+    width: 350px;
+    text-align: center;
+    background-color: black;
+    color: #fff;
+    padding: 15px;
+}
+
+.section-four .container-three h5 {
+    font-size: 20px;
+   
+    }
+    
+    .section-four .container-three h1 {
+        font-size: 40px;
+        padding: 20px 0;
+    }
+    
+    .section-four .container-three p {
+    font-size: 14px;
+    padding: 6px 0;
+    }
+
+    .section-four .container-three button {
+        border-radius: 4px;
+        padding: 8px 20px;
+        cursor: pointer;
+    }
+
+    footer {
+        background-color: rgb(226, 220, 220); 
+    }
+
+    footer .icon-container {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 50px 0;
+    }
+
+    footer .icon-container i {
+        font-size: 20px;
+    }
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
