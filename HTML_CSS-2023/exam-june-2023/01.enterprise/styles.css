@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Work+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-container {
+    height: 180px;
+}
+
+.img-profile img {
+    border-radius: 60%;
+    height: 60px;
+    width: 60px;
+}
+
+.container {
+    display: flex;
+    background-color: lightgray;
+    
+    padding-top: 40px;
+    padding-bottom: 50px;
+    padding-left: 40px;
+    padding-right: 60px;
+}
+
+.card {
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    box-shadow: 2px 3px 5px 2px rgb(165, 164, 164);
+}
+
+.card:nth-child(1) , .card:nth-child(2) {
+    margin-right: 20px;
+}
+
+.card .first-box {
+    padding: 20px;
+}
+
+
+
+.card .first-box h4 {
+    text-transform: uppercase;
+    opacity: 0.7;
+    
+    padding-bottom: 8px;
+}
+
+.card .first-box h2 {
+font-weight: lighter;
+padding-right: 40px;
+font-size: 20px;
+}
+
+.card .first-box p {
+    padding: 20px 0;
+    opacity: 0.7;
+    font-size: 14px;
+    border-bottom: 1px solid black;
+}
+
+.card .second-box {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    display: flex;
+}
+
+.card .second-box .profile-info {
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card .second-box .profile-info p:nth-child(1) {
+    margin-left: 8px;
+}
+
+.card .second-box .profile-info p:nth-child(2) {
+    opacity: 0.7;
+}
