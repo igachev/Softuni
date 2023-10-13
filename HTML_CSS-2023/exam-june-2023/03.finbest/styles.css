@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Work+Sans&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css");
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    min-height: 80px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav ul {
+    display: flex;
+
+}
+
+header nav ul li {
+    list-style: none;
+    padding: 0 20px;
+}
+
+.sign-li {
+    padding: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+.menu , .login-register-menu {
+    margin: 30px 0px;
+}
+
+.sign-btn {
+    
+    border-radius: 10px;
+    padding: 8px 14px;
+    font-weight: 500;
+    background-color: #AFEEEE;
+}
+
+.container-one {
+    display: flex;
+    align-items: center;
+    
+    flex-direction: column;
+    background-color: #AFEEEE;
+    min-height: 300px;
+}
+
+.container-one h1 {
+    font-size: 55px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.container-one p {
+    margin-bottom: 30px;
+}
+
+.container-one .btn-container button {
+    background-color: black;
+    color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.container-one .btn-container button i {
+    margin-right: 5px;
+}
+
+.container-one .btn-container button:first-child {
+    margin-right: 7px;
+}
+
+.container-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+}
+
+.container-two .box {
+    text-align: center;
+    max-width: 300px;
+}
+
+.container-two p {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.container-two hr {
+    min-height: 140px;
+    color: black;
+    margin-top: 70px;
+    margin-left: 15px;
+    margin-right: 15px;
+    opacity: 0.5;
+}
+
+.container-three {
+    margin-top: 40px;
+    height: 400px;
+    background-color: #AFEEEE;
+    display: flex;
+    justify-content: center;
+}
+
+.container-three .img-container {
+    height: inherit;
+    border: 1px dashed grey;
+    padding: 0 40px;
+    margin-right: 50px;
+}
+
+.container-three .content {
+    width: 35%;
+    padding: 60px 40px;
+}
+
+.container-three .content h2 {
+ font-size: 25px;
+    
+}
+
+.container-three .content .bold-p {
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.container-three .content .small-p {
+    font-size: 12px;
+    margin-bottom: 14px;
+}
+
+.container-three .content .underline-p {
+    font-size: 13px;
+    color: black;
+    text-decoration: underline;
+}
+
+.container-three .content .underline-p i {
+    
+    margin-left: 5px;
+}
+
+.before-container-four {
+    padding-top: 30px;
+    padding-bottom: 60px;
+    background-color: 	#FFF0F5;
+}
+
+.before-container-four p {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 12px;
+    background-color: #AFEEEE;
+    border-radius: 12px;
+    width: 100px;
+    font-weight: 700;
+    padding: 8px 0;
+}
+
+.before-container-four h2 {
+    text-align: center;
+
+}
+
+.container-four {
+    display: flex;
+    padding-bottom: 50px;
+    background-color: 		#FFF0F5;
+}
+
+.container-four h5 {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.container-four .outside-p {
+    margin-bottom: 25px;
+}
+
+.container-four .box {
+   flex-shrink: 1;
+   background-color: #fff;
+    padding: 0 20px;
+   flex-grow: 1;
+    position: relative;
+    border-top: 1px solid rgb(197, 191, 191);
+    border-top-left-radius: 10px;
+    border-bottom: 1px solid rgb(197, 191, 191);
+    border-bottom-left-radius: 10px;
+    padding-bottom: 25px;
+    
+}
+
+.container-four .box:nth-child(2) , .container-four .box:nth-child(3) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.container-four .box::after {
+    content: '';
+   position: absolute;
+   top:20px;
+   right: 0;
+   border-right: 1px solid rgb(197, 191, 191);
+   height: 86%;
+}
+
+.container-four .box:nth-child(3)::after {
+    border-right: none;
+}
+
+.container-four .box h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+    
+}
+
+.container-four .box h3 span {
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.container-four .box hr {
+    opacity: 0.7;
+    margin-bottom: 20px;
+}
+
+.container-four .box p {
+    font-size: 12px;
+    line-height: 2;
+}
+
+.container-four .box i {
+    margin-right: 3px;
+}
+
+.same-btn-container {
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    
+}
+
+.container-four .box button {
+    align-self: stretch;
+    background-color: #AFEEEE;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 30px;
+    cursor: pointer;
+    padding: 20px 0;
+}
+
+.container-four .unique-box {
+    background-color: #AFEEEE;
+    
+    flex-shrink: 1;
+    flex-basis: 750px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.container-four .unique-box h5 {
+    text-align: center;
+    font-size: 16px;
+}
+
+.container-four .unique-box h1 {
+    font-size: 21px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+}
+
+.container-four .unique-box .another-inner-box p {
+line-height: 1.8;
+padding: 0 20px;
+}
+
+.container-four .unique-box .single-btn {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    align-items: stretch;
+    justify-content: flex-end;
+    padding: 0 30px;
+}
+
+.container-four .unique-box button {
+    background-color: black;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 10px;
+    padding: 20px 0;
+    cursor: pointer;
+}
+
+.container-five {
+    height: 300px;
+    background-color: #AFEEEE;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container-five .inner-container {
+    width: 420px;
+}
+
+.container-five .inner-container h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.container-five .inner-container p {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.container-five .btn-container {
+    padding-top: 25px;
+    text-align: center;
+}
+
+.container-five .btn-container button {
+    background-color: black;
+    color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 60px;
+}
+
+footer p {
+    font-size: 15px;
+}
+
+footer .icon-container i {
+    margin-right: 10px;
+    cursor: pointer;
+}
