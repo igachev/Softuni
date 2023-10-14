@@ -1,0 +1,135 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+  
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/images/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.container .same-container {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-basis: 55%;
+}
+
+ .container .same-card {
+background-color: #fff;
+
+}
+
+.container  .same-card .img-container {
+    width: 170px;
+    height: 170px;
+  float: right;
+  margin-top: 50px;
+  margin-right: 20px;
+  margin-left: 30px;
+}
+
+.container  .same-card i {
+    font-size: 40px;
+}
+
+.container  .same-card .icon {
+  
+  padding-top: 50px;
+  padding-left: 30px;
+  padding-bottom: 15px;
+}
+
+.container .same-card p {
+
+padding: 0 30px;
+text-align: left;
+font-size: 16px;
+opacity: 0.7;
+}
+
+.container .same-card h2 {
+    
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.container .unique-card {
+    
+    
+  align-self: center;
+   flex-basis: 35%;
+   margin-left: 20px;
+   background-color: #fff;
+}
+
+.container .unique-card i {
+    font-size: 60px;
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-bottom: 65px;
+}
+
+.container .unique-card p {
+    padding-left: 20px;
+    padding-right: 20px;
+    opacity: 0.7;
+    padding-bottom: 100px;
+}
+
+.container .unique-card hr {
+    width: 90%;
+    margin: auto;
+   
+}
+
+.container .unique-card .one-row {
+    display: flex;
+}
+
+.container .unique-card .img-container {
+    width: 100px;
+    height: 100px;
+    filter: grayscale(100%);
+    padding-left: 30px;
+   padding-top: 5px;
+   padding-bottom: 20px;
+   
+}
+
+.container .unique-card .details {
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+.container .unique-card .details small {
+    opacity: 0.7;
+    font-weight: bold;
+}
