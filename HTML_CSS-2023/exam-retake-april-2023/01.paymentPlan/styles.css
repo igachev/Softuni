@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Work+Sans&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css");
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("image/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.container .item {
+    background-color: #fff;
+
+}
+
+.container .item h3 {
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-bottom: 30px;
+}
+
+.container .item h1 {
+font-size: 45px;
+padding-left: 15px;
+padding-bottom: 30px;
+}
+
+.container .item span {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.container .item .small-text {
+    opacity: 0.7;
+    font-size: 11px;
+    padding-left: 15px;
+}
+
+.container .item .p-container {
+    max-width: 325px;
+    font-size: 12px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    line-height: 1.5;
+}
+
+.container .item .p-container p i {
+    margin-right: 5px;
+}
+
+.container .item button {
+    background-color: black;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    border-color: transparent;
+}
+
+.container .item:nth-child(3) .p-container p:nth-child(4) {
+    padding-right: 30px;
+}
+
+.container .item2 {
+    transform: scaleY(1.1);
+    
+}
