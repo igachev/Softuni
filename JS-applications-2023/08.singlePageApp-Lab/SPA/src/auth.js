@@ -26,7 +26,7 @@ export function checkUserNav() {
 
 document.getElementById('logout-link').addEventListener('click',onLogout)
 
-async function onLogout() {
+async function onLogout(e) {
     e.preventDefault()
     const token = sessionStorage.getItem('accessToken')
     
